@@ -1,5 +1,3 @@
-import { Children } from "react";
-
 export default function Block({title, children}) {
   return (
           <div className="feedback-wrapper">
