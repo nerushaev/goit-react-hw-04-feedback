@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import './Feedback.css'
-import Block from './Block';
-import FeedbackOptions from './FeedbackOptions';
-import Statistics from './Statistics'
-import NotificationMessage from './NotificationMessage';
+import Block from '../Block/Block';
+import FeedbackOptions from '../FeedbackOptions/FeedbackOptions';
+import Statistics from '../Statistics/Statistics'
+import NotificationMessage from '../Notification/NotificationMessage';
 
 
 export default class Feedback extends Component {
