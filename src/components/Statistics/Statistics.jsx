@@ -1,3 +1,5 @@
+import propTypes from 'prop-types';
+
 export default function Statistics({ good, neutral, bad, total, positivePercentage, reset }) {
     return (
       <div>
@@ -11,4 +13,13 @@ export default function Statistics({ good, neutral, bad, total, positivePercenta
         <button className="feedback-btn" onClick={reset}>Reset</button>
       </div>
     )
+}
+
+Statistics.propTypes = {
+  good: propTypes.number,
+  neutral: propTypes.number,
+  bad: propTypes.number,
+  total: propTypes.number,
+  positivePercentage: propTypes.number,
+  reset: propTypes.func,
 }
