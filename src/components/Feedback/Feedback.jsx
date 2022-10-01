@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import './Feedback.css'
 import Block from '../Block/Block';
 import FeedbackOptions from '../FeedbackOptions/FeedbackOptions';
@@ -20,6 +20,8 @@ const Feedback = () => {
         return setNeutral((prev) => prev + 1);
       case "bad":
         return setBad((prev) => prev + 1);
+      default:
+        return;
     }
   }
 
